@@ -17,15 +17,19 @@ nav {
 	margin: 0;
 	list-style: none;
 
-	.menu_link {
+	&_link {
 		font-weight: 300;
 		font-size: 15px;
 		color: #ffffff;
 	}
 
-	.menu_item {
+	&_item {
 		border-right: 2px dotted black;
 		padding-right: 45px;
+
+		&:last-child {
+			border-right: none;
+		}
 	}
 }
 
