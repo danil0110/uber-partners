@@ -437,3 +437,25 @@ nav {
 		}
 	}
 }
+
+.world {
+	position: relative;
+	padding: 46px 0 50px;
+	min-height: 720px;
+	background: url('../img/bg/third_bg.jpg') center (center / cover) no-repeat;
+
+	&_link {
+		position: absolute;
+		display: block;
+		bottom: 50px;
+		left: 50%;
+		transform: translateX(-50%);
+		text-transform: uppercase;
+		color: $main_color;
+		text-decoration: none;
+
+		&:hover {
+			color: $main_color;
+		}
+	}
+}
