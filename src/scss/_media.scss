@@ -138,7 +138,7 @@
 		position: fixed;
 		flex-direction: column;
 		justify-content: center;
-		align-items: center;
+		align-items: initial;
 		gap: 10px;
 		top: 0;
 		left: -100%;
@@ -153,12 +153,15 @@
 		}
 
 		&_item {
-			padding-right: 0;
+			width: 100%;
+			padding: 5px 0;
 			border: 0;
 		}
 
 		&_link {
 			font-size: 20px;
+			display: block;
+			text-align: center;
 		}
 	}
 
@@ -272,6 +275,10 @@
 		height: 30px;
 	}
 
+	.menu {
+		width: 85%;
+	}
+
 	.subheader {
 		margin-top: 30px;
 		height: 60px;
@@ -325,10 +332,6 @@
 			width: 210px;
 			height: 50px;
 		}
-	}
-
-	.menu {
-		width: 85%;
 	}
 
 	.reasons {
