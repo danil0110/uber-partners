@@ -4,7 +4,12 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Uber Partners</title>
+		<title>Uber</title>
+		<link
+			rel="shortcut icon"
+			href="./icons/favicon.ico"
+			type="image/x-icon"
+		/>
 		<link rel="stylesheet" href="./css/bootstrap-reboot.min.css" />
 		<link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,26 +26,28 @@
 				<div class="container">
 					<ul class="menu">
 						<li class="menu_item">
-							<a href="#" class="menu_link">Главная</a>
+							<a href="./index.html" class="menu_link">Главная</a>
 						</li>
 						<li class="menu_item">
-							<a href="#" class="menu_link"
+							<a href="#require" class="menu_link"
 								>Со своим автомобилем</a
 							>
 						</li>
 						<li class="menu_item">
-							<a href="#" class="menu_link"
+							<a href="#require" class="menu_link"
 								>На автомобиле компании</a
 							>
 						</li>
 						<li class="menu_item">
-							<a href="#" class="menu_link">Требования</a>
+							<a href="#require" class="menu_link">Требования</a>
 						</li>
 						<li class="menu_item">
-							<a href="#" class="menu_link">Контакты</a>
+							<a href="#footer" class="menu_link">Контакты</a>
 						</li>
 						<li class="menu_item">
-							<a href="#" class="menu_link">Оставить заявку</a>
+							<a href="#promo" class="menu_link"
+								>Оставить заявку</a
+							>
 						</li>
 					</ul>
 				</div>
@@ -54,7 +61,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-6 col-md-4 offset-md-1">
-							<a href="#" class="subheader_logo"
+							<a href="./index.html" class="subheader_logo"
 								><img src="./icons/logo.png" alt="logo"
 							/></a>
 							<div class="subheader_official">
@@ -93,7 +100,7 @@
 			</div>
 		</header>
 
-		<section class="promo">
+		<section id="promo" class="promo">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 offset-md-0 col-lg-10 offset-lg-1">
@@ -395,7 +402,7 @@
 			</div>
 		</section>
 
-		<section class="require">
+		<section id="require" class="require">
 			<div class="container">
 				<div class="section_badge">Возможности</div>
 				<h2 class="section_header">Условия и требования</h2>
@@ -492,30 +499,46 @@
 			</div>
 		</section>
 
-		<footer class="footer">
+		<footer id="footer" class="footer">
 			<div class="container-fluid">
 				<div class="footer_wrapper">
 					<div>
 						<div class="footer_socials">
-							<a href="#" class="footer_socials_round">
+							<a
+								href="https://www.facebook.com/UberEU"
+								target="_blank"
+								class="footer_socials_round"
+							>
 								<img
 									src="./icons/socials/facebook.svg"
 									alt="facebook"
 								/>
 							</a>
-							<a href="#" class="footer_socials_round">
+							<a
+								href="https://twitter.com/uber"
+								target="_blank"
+								class="footer_socials_round"
+							>
 								<img
 									src="./icons/socials/twitter.svg"
 									alt="twitter"
 								/>
 							</a>
-							<a href="#" class="footer_socials_round">
+							<a
+								href="https://www.linkedin.com/company/uber-com"
+								target="_blank"
+								class="footer_socials_round"
+							>
 								<img
 									src="./icons/socials/linkedin.svg"
 									alt="linkedin"
 								/>
 							</a>
-							<a href="#" class="footer_socials_round">
+							<a
+								href="https://www.instagram.com/uber"
+								target="_blank"
+								class="footer_socials_round"
+							>
 								<img
 									src="./icons/socials/instagram.svg"
 									alt="instagram"
@@ -526,7 +549,7 @@
 					<div>
 						<div class="footer_links">
 							<div class="footer_links_primary">
-								<a href="#">На главную</a>
+								<a href="./index.html">На главную</a>
 								<a href="#">Города</a>
 								<a href="#">Для водителей</a>
 							</div>
@@ -544,19 +567,28 @@
 					</div>
 					<div>
 						<div class="footer_apps">
-							<a href="#">
+							<a
+								href="https://apps.apple.com/app/uber/id368677368"
+								target="_blank"
+							>
 								<img
 									src="./img/apps/appstore.png"
 									alt="app store"
 								/>
 							</a>
-							<a href="#">
+							<a
+								href="https://play.google.com/store/apps/details?id=com.ubercab"
+								target="_blank"
+							>
 								<img
 									src="./img/apps/googleplay.png"
 									alt="google play"
 								/>
 							</a>
-							<a href="#">
+							<a
+								href="https://www.microsoft.com/en-us/p/uber/9wzdncrfhxrd"
+								target="_blank"
+							>
 								<img
 									src="./img/apps/microsoft.png"
 									alt="microsoft store"
