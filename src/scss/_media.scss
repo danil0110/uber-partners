@@ -34,6 +34,16 @@
 			width: 300px;
 		}
 	}
+
+	.footer {
+		&_apps {
+			a {
+				display: block;
+				width: 80px;
+				height: 26px;
+			}
+		}
+	}
 }
 
 @media (max-width: 991px) {
@@ -87,6 +97,40 @@
 			align-items: center;
 		}
 	}
+
+	.choice {
+		&_img {
+			width: 700px;
+		}
+
+		&_subtitle {
+			padding: 200px 0 100px;
+		}
+	}
+
+	.footer {
+		&_wrapper {
+			flex-wrap: wrap;
+
+			& > div {
+				&:nth-child(2) {
+					order: 1;
+					width: 100%;
+					margin-bottom: 16px;
+				}
+
+				&:nth-child(1) {
+					order: 2;
+					width: 50%;
+				}
+
+				&:nth-child(3) {
+					order: 3;
+					width: 50%;
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 767px) {
@@ -125,6 +169,7 @@
 		top: 50%;
 		transform: translateY(-50%);
 		width: 26px;
+		height: 12px;
 		cursor: pointer;
 
 		span {
@@ -140,7 +185,7 @@
 			span {
 				margin-bottom: -2px;
 				&:nth-child(1) {
-					transform: rotate(-45deg);
+					transform: translateY(5px) rotate(-45deg);
 				}
 
 				&:nth-child(2) {
@@ -148,9 +193,253 @@
 				}
 
 				&:nth-child(3) {
-					transform: rotate(45deg);
+					transform: translateY(5px) rotate(45deg);
 				}
 			}
+		}
+	}
+
+	.xs-hidden {
+		display: none;
+	}
+
+	.xs-visible {
+		display: block;
+	}
+
+	.subheader {
+		&_phone {
+			display: block;
+			margin-top: 8px;
+			font-weight: normal;
+			font-size: 16px;
+			text-align: center;
+			text-transform: uppercase;
+			color: #ffffff;
+		}
+
+		&_btn {
+			display: block;
+			width: 200px;
+			height: 40px;
+			margin: 0 auto;
+		}
+	}
+
+	.promo {
+		&_header {
+			line-height: 45px;
+		}
+	}
+
+	.reasons {
+		padding: 22px 0 36px;
+
+		&_item {
+			margin: 26px 33px 0;
+		}
+	}
+
+	.choice {
+		&_img {
+			width: 500px;
+		}
+	}
+
+	.choice {
+		&_dark {
+			padding: 30px 0;
+		}
+
+		&_img {
+			position: static;
+			display: block;
+			margin: 54px auto 0;
+			transform: none;
+		}
+
+		&_subtitle {
+			color: #fff;
+			padding: 10px 0 0;
+			font-size: 17px;
+			line-height: 24px;
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	nav {
+		height: 30px;
+	}
+
+	.subheader {
+		margin-top: 30px;
+		height: 60px;
+
+		&_official {
+			display: none;
+		}
+
+		&_logo {
+			margin-top: 18px;
+		}
+
+		&_phone {
+			margin-top: 3px;
+			font-weight: normal;
+			font-size: 12px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		&_btn {
+			width: 110px;
+			height: 22px;
+			font-size: 10px;
+		}
+	}
+
+	.promo {
+		min-height: 400px;
+		padding: 143px 0 35px;
+
+		&_descr {
+			display: none;
+		}
+
+		&_header {
+			font-size: 30px;
+			padding: 0 24px;
+			line-height: 35px;
+		}
+
+		&_subheader {
+			margin-top: 33px;
+			padding: 0 10px;
+			font-size: 20px;
+			line-height: 30px;
+		}
+
+		&_btn {
+			margin-top: 72px;
+			width: 210px;
+			height: 50px;
+		}
+	}
+
+	.menu {
+		width: 85%;
+	}
+
+	.reasons {
+		padding: 22px 0 36px;
+
+		&_item {
+			margin: 26px 0 0;
+		}
+
+		&_icon {
+			width: 100px;
+			height: 100px;
+		}
+	}
+
+	.section_header {
+		font-size: 16px;
+		margin-top: 18px;
+	}
+
+	.section_subheader {
+		margin-top: 9px;
+		font-size: 14px;
+		line-height: 21px;
+	}
+
+	.mobile {
+		padding: 40px 0;
+	}
+
+	.choice {
+		min-height: 300px;
+
+		&_dark {
+			min-height: 300px;
+		}
+
+		&_img {
+			width: 300px;
+		}
+	}
+
+	.require {
+		padding: 30px 0;
+
+		&_list {
+			padding-left: 30px;
+
+			li {
+				margin-bottom: 0;
+				font-size: 14px;
+			}
+		}
+
+		&_block {
+			margin: 15px 0;
+		}
+
+		&_title {
+			font-size: 16px;
+		}
+	}
+
+	.world {
+		padding: 30px 0;
+		min-height: 360px;
+	}
+
+	.footer {
+		&::before {
+			margin: 24px auto 0;
+		}
+
+		&_wrapper {
+			flex-direction: column;
+			align-items: center;
+			gap: 16px;
+
+			& > div {
+				width: initial;
+				&:nth-child(2) {
+					margin-bottom: 0;
+				}
+
+				&:nth-child(1),
+				&:nth-child(3) {
+					width: initial;
+				}
+			}
+		}
+
+		&_links {
+			&_primary {
+				gap: 8px;
+			}
+
+			&_secondary {
+				margin-top: 15px;
+				gap: 15px;
+				justify-content: center;
+				flex-wrap: wrap;
+			}
+
+			&_language {
+				margin-top: 15px;
+			}
+		}
+
+		&_socials,
+		&_apps {
+			justify-content: center;
 		}
 	}
 }

@@ -473,7 +473,11 @@ nav {
 		justify-content: space-between;
 
 		& > div {
-			width: 33.3%;
+			width: 27%;
+
+			&:nth-child(2) {
+				width: 46%;
+			}
 		}
 	}
 
@@ -556,4 +560,8 @@ nav {
 			}
 		}
 	}
+}
+
+.xs-visible {
+	display: none;
 }
