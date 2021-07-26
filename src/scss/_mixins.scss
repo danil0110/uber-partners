@@ -1,6 +1,6 @@
 @mixin btn_hover {
-	&:hover {
-		background: none;
-		background-color: $main_color;
-	}
+  &:hover {
+    background: none;
+    background-color: $main_color;
+  }
 }
